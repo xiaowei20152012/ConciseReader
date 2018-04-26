@@ -1,0 +1,48 @@
+buildscript {
+	repositories {
+		mavenCentral()
+	}
+
+	dependencies {
+		classpath 'com.android.tools.build:gradle:3.0.0'
+	}
+}
+
+apply plugin: 'com.android.library'
+
+dependencies {
+	compile project(':fbreader:common')
+}
+
+android {
+	compileSdkVersion 19
+	buildToolsVersion '26.0.2'
+
+	lintOptions {
+		abortOnError false
+	}
+
+	compileOptions {
+		sourceCompatibility JavaVersion.VERSION_1_7
+		targetCompatibility JavaVersion.VERSION_1_7
+	}
+
+	sourceSets {
+		main.java.srcDirs = ['src/main/java']
+		main.aidl.srcDirs = ['src/main/java']
+		main.res.srcDirs = ['src/main/res']
+		main.assets.srcDirs = ['src/main/assets']
+		main.manifest.srcFile 'src/main/AndroidManifest.xml'
+	}
+
+	defaultConfig {
+		minSdkVersion 5
+		maxSdkVersion 10
+		targetSdkVersion 9
+	}
+
+	buildTypes {
+		release {
+		}
+	}
+}

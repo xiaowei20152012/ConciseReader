@@ -1,0 +1,14 @@
+default.properties
+build.properties
+local.properties
+build/
+scripts/resources/*.diff
+obj/
+epubs/
+mappings/
+READY/
+.gradle
+.classpath
+.settings
+*.so
+*~
