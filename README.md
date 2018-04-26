@@ -1,2 +1,2 @@
-# ConciseReaderConcise
+# ConciseReader
 Free simple tool application
