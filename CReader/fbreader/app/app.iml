@@ -91,13 +91,6 @@
       <sourceFolder url="file://$MODULE_DIR$/src/debug/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/debug/rs" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/debug/shaders" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/res" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/resources" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/assets" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/aidl" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/rs" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/shaders" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/res" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/resources" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/assets" type="java-test-resource" />
@@ -105,6 +98,13 @@
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/rs" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/shaders" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/res" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/assets" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/aidl" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/rs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/shaders" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/res" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/assets" type="java-resource" />
@@ -147,14 +147,14 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 19 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="__local_aars__:/Users/wei.li/Documents/github/gitlab/ConciseReader/ConciseReader/fbreader/app/libs/pdfparse.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="__local_aars__:/Users/wei.li/Documents/github/gitlab/ConciseReader/ConciseReader/fbreader/app/libs/nanohttpd-2.0.5.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="__local_aars__:/Users/wei.li/Documents/github/gitlab/ConciseReader/CReader/fbreader/common/libs/LingvoIntegration_2.5.2.12.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="__local_aars__:/Users/wei.li/Documents/github/gitlab/ConciseReader/CReader/fbreader/common/libs/json-simple-1.1.1.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="com.android.support:support-annotations:21.0.0@jar" level="project" />
-    <orderEntry type="library" name="__local_aars__:/Users/wei.li/Documents/github/gitlab/ConciseReader/ConciseReader/fbreader/common/libs/LingvoIntegration_2.5.2.12.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="__local_aars__:/Users/wei.li/Documents/github/gitlab/ConciseReader/ConciseReader/fbreader/common/libs/open-dictionary-api-1.2.1.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="__local_aars__:/Users/wei.li/Documents/github/gitlab/ConciseReader/ConciseReader/fbreader/app/libs/httpmime-4.2.5.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="__local_aars__:/Users/wei.li/Documents/github/gitlab/ConciseReader/CReader/fbreader/app/libs/httpmime-4.2.5.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="__local_aars__:/Users/wei.li/Documents/github/gitlab/ConciseReader/CReader/fbreader/app/libs/nanohttpd-2.0.5.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="__local_aars__:/Users/wei.li/Documents/github/gitlab/ConciseReader/CReader/fbreader/app/libs/pdfparse.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="com.android.support:support-v4-21.0.0" level="project" />
-    <orderEntry type="library" name="__local_aars__:/Users/wei.li/Documents/github/gitlab/ConciseReader/ConciseReader/fbreader/common/libs/json-simple-1.1.1.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="__local_aars__:/Users/wei.li/Documents/github/gitlab/ConciseReader/CReader/fbreader/common/libs/open-dictionary-api-1.2.1.jar:unspecified@jar" level="project" />
     <orderEntry type="module" module-name="drag-sort-listview" />
     <orderEntry type="module" module-name="util" />
     <orderEntry type="module" module-name="SuperToasts" />

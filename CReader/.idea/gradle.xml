@@ -8,6 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/bookshelf" />
             <option value="$PROJECT_DIR$/fbreader" />
             <option value="$PROJECT_DIR$/fbreader/api" />
             <option value="$PROJECT_DIR$/fbreader/app" />

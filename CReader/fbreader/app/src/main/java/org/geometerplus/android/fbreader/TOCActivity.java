@@ -38,6 +38,7 @@ import org.geometerplus.fbreader.bookmodel.TOCTree;
 import org.geometerplus.fbreader.fbreader.FBReaderApp;
 
 import org.geometerplus.android.util.OrientationUtil;
+import org.geometerplus.zlibrary.ui.android.library.UncaughtExceptionHandler;
 
 public class TOCActivity extends ListActivity {
 	private TOCAdapter myAdapter;
@@ -47,7 +48,7 @@ public class TOCActivity extends ListActivity {
 	protected void onCreate(Bundle bundle) {
 		super.onCreate(bundle);
 
-		Thread.setDefaultUncaughtExceptionHandler(new org.geometerplus.zlibrary.ui.android.library.UncaughtExceptionHandler(this));
+		Thread.setDefaultUncaughtExceptionHandler(new UncaughtExceptionHandler(this));
 
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 

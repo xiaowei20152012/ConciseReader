@@ -35,6 +35,7 @@ android {
 	}
 
 	defaultConfig {
+//		applicationId "com.concise.reader"
 		minSdkVersion 5
 		maxSdkVersion 10
 		targetSdkVersion 9
