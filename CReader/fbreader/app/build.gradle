@@ -24,11 +24,20 @@ dependencies {
 	compile files('libs/nanohttpd-2.0.5.jar')
 	compile files('libs/httpmime-4.2.5.jar')
 	compile files('libs/pdfparse.jar')
+	//add LeakCanary
+	debugCompile 'com.squareup.leakcanary:leakcanary-android:1.4'
+	releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4'
+//	implementation 'com.android.support:design:28.0.0-alpha1'
+//		compile 'com.android.support:design:21.0.1'
+
 }
 
 android {
-	compileSdkVersion 19
+	compileSdkVersion 26
 	buildToolsVersion '26.0.2'
+
+	useLibrary 'org.apache.http.legacy'
+
 
 	lintOptions {
 		abortOnError false
@@ -36,9 +45,8 @@ android {
 
 	defaultConfig {
 //		applicationId "com.concise.reader"
-		minSdkVersion 5
-		maxSdkVersion 10
-		targetSdkVersion 9
+		minSdkVersion 14
+		targetSdkVersion 26
 		versionCode 0
 		versionName new File("$projectDir/VERSION").text.trim()
 	}
@@ -84,13 +92,13 @@ android {
 	flavorDimensions 'abi'
 
 	productFlavors {
-		fat {
-			dimension 'abi'
-			ndk {
-				abiFilters 'x86', 'armeabi-v7a', 'armeabi', 'mips'
-				versionCode 0
-			}
-		}
+//		fat {
+//			dimension 'abi'
+//			ndk {
+//				abiFilters 'x86', 'armeabi-v7a', 'armeabi', 'mips'
+//				versionCode 0
+//			}
+//		}
 		arm {
 			dimension 'abi'
 			ndk {
@@ -105,20 +113,20 @@ android {
 				versionCode 2
 			}
 		}
-		x86 {
-			dimension 'abi'
-			ndk {
-				abiFilter 'x86'
-				versionCode 3
-			}
-		}
-		mips {
-			dimension 'abi'
-			ndk {
-				abiFilter 'mips'
-				versionCode 4
-			}
-		}
+//		x86 {
+//			dimension 'abi'
+//			ndk {
+//				abiFilter 'x86'
+//				versionCode 3
+//			}
+//		}
+//		mips {
+//			dimension 'abi'
+//			ndk {
+//				abiFilter 'mips'
+//				versionCode 4
+//			}
+//		}
 	}
 
 	task ndkBuild(type: Exec) {
@@ -159,4 +167,8 @@ android.applicationVariants.all { variant ->
 	}
 
 	variant.mergedFlavor.versionCode = baseCode + 10 + abiVersion
+}
+
+repositories {
+	google()
 }

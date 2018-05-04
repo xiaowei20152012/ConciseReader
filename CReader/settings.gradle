@@ -1,4 +1,4 @@
-include ':fbreader:app', ':bookshelf'
+include ':fbreader:app'
 include ':fbreader:api'
 include ':fbreader:util'
 include ':fbreader:common'

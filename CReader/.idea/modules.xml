@@ -8,7 +8,6 @@
       <module fileurl="file://$PROJECT_DIR$/third-party/android-filechooser/android-filechooser.iml" filepath="$PROJECT_DIR$/third-party/android-filechooser/android-filechooser.iml" />
       <module fileurl="file://$PROJECT_DIR$/fbreader/api/api.iml" filepath="$PROJECT_DIR$/fbreader/api/api.iml" />
       <module fileurl="file://$PROJECT_DIR$/fbreader/app/app.iml" filepath="$PROJECT_DIR$/fbreader/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/bookshelf/bookshelf.iml" filepath="$PROJECT_DIR$/bookshelf/bookshelf.iml" />
       <module fileurl="file://$PROJECT_DIR$/fbreader/common/common.iml" filepath="$PROJECT_DIR$/fbreader/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/third-party/drag-sort-listview/drag-sort-listview.iml" filepath="$PROJECT_DIR$/third-party/drag-sort-listview/drag-sort-listview.iml" />
       <module fileurl="file://$PROJECT_DIR$/fbreader/fbreader.iml" filepath="$PROJECT_DIR$/fbreader/fbreader.iml" />

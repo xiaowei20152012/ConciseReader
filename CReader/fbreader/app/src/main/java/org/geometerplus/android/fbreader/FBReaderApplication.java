@@ -19,7 +19,25 @@
 
 package org.geometerplus.android.fbreader;
 
+
+import com.squareup.leakcanary.LeakCanary;
+
 import org.geometerplus.zlibrary.ui.android.library.ZLAndroidApplication;
 
 public class FBReaderApplication extends ZLAndroidApplication {
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+
+        //init leakCanary
+        if (LeakCanary.isInAnalyzerProcess(this)) {
+            // This process is dedicated to LeakCanary for heap analysis.
+            // You should not init your app in this process.
+            return;
+        }
+        LeakCanary.install(this);
+
+
+    }
 }
