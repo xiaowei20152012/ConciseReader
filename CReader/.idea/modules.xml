@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/fbreader/common/common.iml" filepath="$PROJECT_DIR$/fbreader/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/third-party/drag-sort-listview/drag-sort-listview.iml" filepath="$PROJECT_DIR$/third-party/drag-sort-listview/drag-sort-listview.iml" />
       <module fileurl="file://$PROJECT_DIR$/fbreader/fbreader.iml" filepath="$PROJECT_DIR$/fbreader/fbreader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/readerad/readerad.iml" filepath="$PROJECT_DIR$/readerad/readerad.iml" />
       <module fileurl="file://$PROJECT_DIR$/fbreader/resources/resources.iml" filepath="$PROJECT_DIR$/fbreader/resources/resources.iml" />
       <module fileurl="file://$PROJECT_DIR$/fbreader/text-formats/text-formats.iml" filepath="$PROJECT_DIR$/fbreader/text-formats/text-formats.iml" />
       <module fileurl="file://$PROJECT_DIR$/third-party/third-party.iml" filepath="$PROJECT_DIR$/third-party/third-party.iml" />

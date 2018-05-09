@@ -49,6 +49,7 @@ public abstract class TreeActivity<T extends FBTree> extends ListActivity {
     private T myCurrentTree;
     // we store the key separately because
     // it will be changed in case of myCurrentTree.removeSelf() call
+
     private FBTree.Key myCurrentKey;
     private final List<FBTree.Key> myHistory =
             Collections.synchronizedList(new ArrayList<FBTree.Key>());
@@ -86,6 +87,7 @@ public abstract class TreeActivity<T extends FBTree> extends ListActivity {
         OrientationUtil.setOrientation(this, intent);
         if (OPEN_TREE_ACTION.equals(intent.getAction())) {
             runOnUiThread(new Runnable() {
+                @Override
                 public void run() {
                     init(intent);
                 }
@@ -131,6 +133,7 @@ public abstract class TreeActivity<T extends FBTree> extends ListActivity {
 
     public void clearHistory() {
         runOnUiThread(new Runnable() {
+            @Override
             public void run() {
                 myHistory.clear();
             }
@@ -148,11 +151,13 @@ public abstract class TreeActivity<T extends FBTree> extends ListActivity {
                 if (messageKey != null) {
                     UIUtil.createExecutor(TreeActivity.this, messageKey).execute(
                             new Runnable() {
+                                @Override
                                 public void run() {
                                     tree.waitForOpening();
                                 }
                             },
                             new Runnable() {
+                                @Override
                                 public void run() {
                                     openTreeInternal(tree, treeToSelect, storeInHistory);
                                 }
@@ -193,6 +198,7 @@ public abstract class TreeActivity<T extends FBTree> extends ListActivity {
         if (index != -1) {
             setSelection(index);
             getListView().post(new Runnable() {
+                @Override
                 public void run() {
                     setSelection(index);
                 }
@@ -228,6 +234,7 @@ public abstract class TreeActivity<T extends FBTree> extends ListActivity {
             case CANNOT_OPEN:
                 UIMessageUtil.showErrorMessage(TreeActivity.this, tree.getOpeningStatusMessage());
                 break;
+            default:
         }
     }
 }

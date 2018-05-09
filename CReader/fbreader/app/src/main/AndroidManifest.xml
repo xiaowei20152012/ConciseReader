@@ -62,14 +62,14 @@
             </intent-filter>
         </activity>
 
-        <service
-            android:name="org.geometerplus.android.fbreader.api.ApiService"
-            android:launchMode="singleTask">
-            <intent-filter>
-                <action android:name="android.fbreader.action.API" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </service>
+        <!--<service-->
+            <!--android:name="org.geometerplus.android.fbreader.api.ApiService"-->
+            <!--android:launchMode="singleTask">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.fbreader.action.API" />-->
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--</intent-filter>-->
+        <!--</service>-->
 
         <activity
             android:name="com.concise.ui.HomeActivity"
@@ -254,33 +254,33 @@
             android:process=":imageView"
             android:theme="@style/FBReader.Activity" />
 
-        <service
-            android:name="org.geometerplus.android.fbreader.libraryService.LibraryService"
-            android:launchMode="singleTask"
-            android:process=":libraryService">
-            <intent-filter>
-                <action android:name="android.fbreader.action.LIBRARY_SERVICE" />
-            </intent-filter>
-        </service>
-        <service
-            android:name="org.geometerplus.android.fbreader.config.ConfigService"
-            android:launchMode="singleTask"
-            android:process=":configService">
-            <intent-filter>
-                <action android:name="android.fbreader.action.CONFIG_SERVICE" />
-            </intent-filter>
-        </service>
-        <service
-            android:name="org.geometerplus.android.fbreader.sync.SyncService"
-            android:launchMode="singleTask"
-            android:process=":networkLibrary">
-            <intent-filter>
-                <action android:name="android.fbreader.action.sync.START" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.fbreader.action.sync.QUICK_SYNC" />
-            </intent-filter>
-        </service>
+        <!--<service-->
+            <!--android:name="org.geometerplus.android.fbreader.libraryService.LibraryService"-->
+            <!--android:launchMode="singleTask"-->
+            <!--android:process=":libraryService">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.fbreader.action.LIBRARY_SERVICE" />-->
+            <!--</intent-filter>-->
+        <!--</service>-->
+        <!--<service-->
+            <!--android:name="org.geometerplus.android.fbreader.config.ConfigService"-->
+            <!--android:launchMode="singleTask"-->
+            <!--android:process=":configService">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.fbreader.action.CONFIG_SERVICE" />-->
+            <!--</intent-filter>-->
+        <!--</service>-->
+        <!--<service-->
+            <!--android:name="org.geometerplus.android.fbreader.sync.SyncService"-->
+            <!--android:launchMode="singleTask"-->
+            <!--android:process=":networkLibrary">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.fbreader.action.sync.START" />-->
+            <!--</intent-filter>-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.fbreader.action.sync.QUICK_SYNC" />-->
+            <!--</intent-filter>-->
+        <!--</service>-->
 
         <activity
             android:name="org.geometerplus.android.fbreader.library.BookInfoActivity"
@@ -433,11 +433,11 @@
             </intent-filter>
         </activity>
 
-        <service
-            android:name="org.geometerplus.android.fbreader.network.BookDownloaderService"
-            android:exported="false"
-            android:launchMode="singleTask"
-            android:process=":networkLibrary" />
+        <!--<service-->
+            <!--android:name="org.geometerplus.android.fbreader.network.BookDownloaderService"-->
+            <!--android:exported="false"-->
+            <!--android:launchMode="singleTask"-->
+            <!--android:process=":networkLibrary" />-->
 
         <activity
             android:name="org.geometerplus.android.fbreader.network.NetworkSearchActivity"
@@ -605,11 +605,11 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/FBReader.Transparent" />
 
-        <service
-            android:name="org.geometerplus.android.fbreader.httpd.DataService"
-            android:exported="false"
-            android:launchMode="singleTask"
-            android:process=":dataService" />
+        <!--<service-->
+            <!--android:name="org.geometerplus.android.fbreader.httpd.DataService"-->
+            <!--android:exported="false"-->
+            <!--android:launchMode="singleTask"-->
+            <!--android:process=":dataService" />-->
         <service
             android:name="group.pals.android.lib.ui.filechooser.services.LocalFileProvider"
             android:exported="false" />

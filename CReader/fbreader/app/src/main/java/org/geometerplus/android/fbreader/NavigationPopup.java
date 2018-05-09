@@ -118,14 +118,17 @@ final class NavigationPopup extends ZLApplication.PopupPanel {
 				myFBReader.getViewWidget().repaint();
 			}
 
+			@Override
 			public void onStartTrackingTouch(SeekBar seekBar) {
 				myIsInProgress = true;
 			}
 
+			@Override
 			public void onStopTrackingTouch(SeekBar seekBar) {
 				myIsInProgress = false;
 			}
 
+			@Override
 			public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
 				if (fromUser) {
 					final int page = progress + 1;

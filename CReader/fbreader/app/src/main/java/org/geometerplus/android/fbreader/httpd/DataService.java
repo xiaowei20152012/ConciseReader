@@ -34,10 +34,12 @@ public class DataService extends Service {
 	public static class Connection implements ServiceConnection {
 		private DataInterface myDataInterface;
 
+		@Override
 		public void onServiceConnected(ComponentName componentName, IBinder binder) {
 			myDataInterface = DataInterface.Stub.asInterface(binder);
 		}
 
+		@Override
 		public void onServiceDisconnected(ComponentName componentName) {
 			myDataInterface = null;
 		}
@@ -88,6 +90,7 @@ public class DataService extends Service {
 		super.onDestroy();
 	}
 
+	@Override
 	public IBinder onBind(Intent intent) {
 		return new DataInterface.Stub() {
 			public int getPort() {
